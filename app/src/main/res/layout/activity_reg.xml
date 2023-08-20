@@ -14,13 +14,17 @@
         android:layout_height="200dp"
         app:srcCompat="@drawable/guni_pink_logo" />
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="400dp"
-        android:layout_height="350dp"
-        android:layout_gravity="center">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginHorizontal="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#f2e6ff">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,6 +38,7 @@
                 android:layout_marginStart="15dp"/>
 
             <EditText
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -55,6 +60,7 @@
                 android:layout_marginStart="15dp"/>
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -149,9 +155,23 @@
     </com.google.android.material.card.MaterialCardView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:elevation="30dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg"
+            android:text="Register"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginVertical="70dp"
+       >
 
         <TextView
             android:layout_width="wrap_content"
@@ -163,12 +183,13 @@
             android:layout_marginStart="40dp"/>
 
         <Button
-            android:id="@+id/lgn_reg"
+            android:id="@+id/lgn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Login"
             android:background="?attr/actionBarItemBackground"
             android:textColor="@color/black"/>
+
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

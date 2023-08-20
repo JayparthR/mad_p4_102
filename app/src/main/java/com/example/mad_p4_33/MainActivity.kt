@@ -15,5 +15,9 @@ class MainActivity : AppCompatActivity() {
             var i=Intent(this,reg::class.java)
             startActivity(i);
         }
+        l.setOnClickListener(){
+            var i=Intent(this,login_ori::class.java)
+            startActivity(i);
+        }
     }
 }
